@@ -2,8 +2,12 @@
 
 <%= form_with :model => @user do |form| %>
   <p>
-    <%= form.label "username" %>
-    <%= form.text_field "username" %>
+    <%= form.label "first_name" %>
+    <%= form.text_field "first_name" %>
+  </p>
+    <p>
+    <%= form.label "last_name" %>
+    <%= form.text_field "last_name" %>
   </p>
   <p>
     <%= form.label "email" %>
