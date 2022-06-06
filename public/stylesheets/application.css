@@ -1,0 +1,13 @@
+h1 {
+    color: green;
+    font-size: 60px;
+}
+
+p {
+        font-size: 36px;
+        color: purple
+}
+
+p a {
+    color: blue
+}
