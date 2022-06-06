@@ -1,6 +1,9 @@
 <h1>New Post</h1>
 
 <%= form_with :model => @post do |form| %>
+  
+  <div class="row">
+    <div class ="col-md-4 col-sm-6"></div>
   <p>
     <%= form.label "title" %>
     <%= form.text_field "title" %>
@@ -13,6 +16,40 @@
     <%= form.label "posted_on" %>
     <%= form.date_field "posted_on" %>
   </p>
+  </div>
+
+  <div class="row">
+    <div class ="col-md-4 col-sm-6"></div>
+  <p>
+    <%= form.label "title" %>
+    <%= form.text_field "title" %>
+  </p>
+  <p>
+    <%= form.label "description" %>
+    <%= form.text_field "description" %>
+  </p>
+  <p>
+    <%= form.label "posted_on" %>
+    <%= form.date_field "posted_on" %>
+  </p>
+  </div>
+
+  <div class="row">
+    <div class ="col-md-4 col-sm-6"></div>
+  <p>
+    <%= form.label "title" %>
+    <%= form.text_field "title" %>
+  </p>
+  <p>
+    <%= form.label "description" %>
+    <%= form.text_field "description" %>
+  </p>
+  <p>
+    <%= form.label "posted_on" %>
+    <%= form.date_field "posted_on" %>
+  </p>
+  </div>
+
   <p>
     <%= form.submit %>
   </p>
