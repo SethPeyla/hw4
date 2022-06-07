@@ -1,19 +1,14 @@
 <h1>Places</h1>
-
+<% if @current_user %>
 <ul>
   <% for place in @places %>
     <li><a href="/places/<%= place["id"] %>"><%= place["name"] %></a></li>
   <% end %>
 </ul>
 
-<ul>
-  <% if place.uploaded_image.attached? %>
-    <img src="<%= url_for(place.uploaded_image) %>" class="img-fluid">
-  <% else %>
-    <img src="<%= place["image"] %>" class="img-fluid">
-  <% end %>
-</ul>
-
 <p>
   <a class="btn btn-primary" href="/places/new">New place</a>
 </p>
+<% else %>
+Please log in.
+<% end  %>
