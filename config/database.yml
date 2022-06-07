@@ -22,4 +22,7 @@ test:
 
 production:
   <<: *default
-  database: db/production.sqlite3
+  adapter: postgresql
+  database: app-seth-peyla_production
+  username: app-seth-peyla
+  password: <%= ENV["APP-SETH-PEYLA_DATABASE_PASSWORD"] %>
