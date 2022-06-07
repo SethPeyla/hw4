@@ -8,7 +8,7 @@
     <div class="col-md-4 col-sm-6">
       <h3><%= post["title"] %></h3>
       <h4><%= post["posted_on"] %></h4>
-      <% if post.uploaded_image.attached?  %>
+      <% if post.uploaded_image.attached? %>
         <img src = "<%= url_for(post.uploaded_image) %>" class="img-fluid rounded float-start">
         <p><%= post["description"] %></p>
         <% else  %>
