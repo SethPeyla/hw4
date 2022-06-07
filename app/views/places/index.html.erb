@@ -6,6 +6,14 @@
   <% end %>
 </ul>
 
+<ul>
+  <% if place.uploaded_image.attached? %>
+    <img src="<%= url_for(place.uploaded_image) %>" class="img-fluid">
+  <% else %>
+    <img src="<%= place["image"] %>" class="img-fluid">
+  <% end %>
+</ul>
+
 <p>
   <a class="btn btn-primary" href="/places/new">New place</a>
 </p>

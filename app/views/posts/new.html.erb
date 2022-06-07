@@ -16,40 +16,12 @@
     <%= form.label "posted_on" %>
     <%= form.date_field "posted_on" %>
   </p>
-  </div>
 
-  <div class="row">
-    <div class ="col-md-4 col-sm-6"></div>
-  <p>
-    <%= form.label "title" %>
-    <%= form.text_field "title" %>
-  </p>
-  <p>
-    <%= form.label "description" %>
-    <%= form.text_field "description" %>
-  </p>
-  <p>
-    <%= form.label "posted_on" %>
-    <%= form.date_field "posted_on" %>
-  </p>
   </div>
-
-  <div class="row">
-    <div class ="col-md-4 col-sm-6"></div>
-  <p>
-    <%= form.label "title" %>
-    <%= form.text_field "title" %>
-  </p>
-  <p>
-    <%= form.label "description" %>
-    <%= form.text_field "description" %>
-  </p>
-  <p>
-    <%= form.label "posted_on" %>
-    <%= form.date_field "posted_on" %>
-  </p>
+  <div class="mb-3">
+    <%= form.label "uploaded_image", :class => "form-label" %>
+    <%= form.file_field "uploaded_image", :accept => "image/png,image/jpg,image/jpeg,image/gif", :class => "form-control" %>
   </div>
-
   <p>
     <%= form.submit %>
   </p>
